@@ -26,9 +26,11 @@ addBtn.addEventListener('click', onAddBtnClick);
 
 function onAddBtnClick() {
   const btn = document.createElement('button');
-  btn.textContent = `Кнопка ${labelCounter}`;
+  btn.textContent = `ME BUTTON #${labelCounter}`;
   btn.type = 'button';
+  btn.style.backgroundColor = getRandomHexColor();
 
   container.appendChild(btn);
   labelCounter += 1;
 }
+
